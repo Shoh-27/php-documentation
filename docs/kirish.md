@@ -18,7 +18,8 @@ Keng jamoat va dokumentatsiya
 Laravel, Symfony kabi mashhur frameworklar
 
 PHP qanday ishlaydi?
-```[Foydalanuvchi] → [HTTP So'rov] → [Web Server] → [PHP Engine] → [Ma'lumotlar bazasi]
+```
+    [Foydalanuvchi] → [HTTP So'rov] → [Web Server] → [PHP Engine] → [Ma'lumotlar bazasi]
                                                         ↓
     [Foydalanuvchi] ← [HTML Javob] ← [Web Server] ← [PHP natija]
 ```
@@ -72,7 +73,8 @@ PHP 8.0 (2020)
 Kod tezligini 2-3 baravar oshiradi
 Matematik hisob-kitoblarda katta foyda.
 2. Named Arguments
-```function createUser($name, $email, $age = null) {
+```
+    function createUser($name, $email, $age = null) {
         // ...
     }
     
