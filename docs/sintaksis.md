@@ -129,4 +129,68 @@ PHP da 8 ta asosiy ma'lumot turi mavjud:
 | Resource | Tashqi manba/resurs  | fopen()       |
 
 # String (Matn)
-``````
+```
+<?php
+// Oddiy qo'shtirnoq - literal string
+$name1 = 'Ali';
+echo 'Salom, $name1'; // Salom, $name1
+
+// Qo'sh qo'shtirnoq - interpolation
+$name2 = 'Vali';
+echo "Salom, $name2"; // Salom, Vali
+
+// Heredoc sintaksis
+$html = <<<HTML
+<div class="user">
+    <h1>$name2</h1>
+    <p>Bu yerda HTML yozish qulay</p>
+</div>
+HTML;
+
+// Nowdoc sintaksis (PHP 5.3+)
+$code = <<<'CODE'
+function test() {
+    echo $variable; // Bu parse qilinmaydi
+}
+CODE;
+```
+# String funksiyalari:
+```
+<?php
+$text = "  PHP Dasturlash  ";
+
+// Uzunlik
+echo strlen($text); // 19
+
+// Bo'shliqlarni olib tashlash
+echo trim($text); // "PHP Dasturlash"
+
+// Katta harfga
+echo strtoupper($text); // "  PHP DASTURLASH  "
+
+// Kichik harfga
+echo strtolower($text); // "  php dasturlash  "
+
+// Qidirish
+echo strpos($text, "PHP"); // 2
+
+// Almashtirish
+echo str_replace("PHP", "Python", $text);
+
+// Bo'laklarga ajratish
+$words = explode(" ", trim($text));
+print_r($words); // ["PHP", "Dasturlash"]
+
+// Birlashtirish
+$joined = implode(", ", $words); // "PHP, Dasturlash"
+
+// Substring
+echo substr($text, 2, 3); // "PHP"
+
+// PHP 8+: str_contains, str_starts_with, str_ends_with
+echo str_contains($text, "PHP") ? "Mavjud" : "Yo'q";
+echo str_starts_with($text, "  PHP") ? "Ha" : "Yo'q";
+echo str_ends_with(trim($text), "lash") ? "Ha" : "Yo'q";
+```
+
+#
