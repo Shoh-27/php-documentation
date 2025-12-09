@@ -233,3 +233,32 @@ echo number_format($number, 2, '.', ','); // 1,234,567.89
 ```
 
 # Boolean
+```
+<?php
+$isActive = true;
+$isDeleted = false;
+
+// Boolean qiymatlar qaytaradigan ifodalar
+echo (10 > 5);          // true
+echo (10 < 5);          // false
+echo (10 == "10");      // true (qiymat bir xil)
+echo (10 === "10");     // false (tur ham tekshiriladi)
+echo !$isActive;        // false
+echo ($isActive && !$isDeleted); // true
+echo ($isActive || $isDeleted);  // true
+
+// Falsy qiymatlar
+var_dump((bool) 0);        // false
+var_dump((bool) 0.0);      // false
+var_dump((bool) "");       // false
+var_dump((bool) "0");      // false
+var_dump((bool) null);     // false
+var_dump((bool) []);       // false
+var_dump((bool) false);    // false
+
+// Truthy qiymatlar
+var_dump((bool) 1);        // true
+var_dump((bool) -1);       // true
+var_dump((bool) "text");   // true
+var_dump((bool) [1, 2]);   // true
+```
