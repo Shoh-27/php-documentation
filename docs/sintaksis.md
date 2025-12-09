@@ -193,4 +193,43 @@ echo str_starts_with($text, "  PHP") ? "Ha" : "Yo'q";
 echo str_ends_with(trim($text), "lash") ? "Ha" : "Yo'q";
 ```
 
-#
+# Integer va Float
+```
+<?php
+// Integer
+$age = 25;
+$temperature = -10;
+$hex = 0xFF; // 255
+$binary = 0b1010; // 10
+$octal = 0755; // 493
+
+// Float (Double)
+$price = 99.99;
+$pi = 3.14159;
+$scientific = 1.5e3; // 1500
+
+// Operatsiyalar
+$sum = 10 + 5;      // 15
+$diff = 10 - 5;     // 5
+$product = 10 * 5;  // 50
+$quotient = 10 / 5; // 2
+$remainder = 10 % 3; // 1
+$power = 2 ** 3;    // 8
+
+// Matematik funksiyalar
+echo abs(-10);      // 10
+echo round(3.6);    // 4
+echo ceil(3.1);     // 4
+echo floor(3.9);    // 3
+echo sqrt(16);      // 4
+echo pow(2, 3);     // 8
+echo max(1, 5, 3);  // 5
+echo min(1, 5, 3);  // 1
+echo rand(1, 100);  // Tasodifiy son
+
+// Number formatting
+$number = 1234567.89;
+echo number_format($number, 2, '.', ','); // 1,234,567.89
+```
+
+# Boolean
