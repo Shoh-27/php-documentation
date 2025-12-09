@@ -1,0 +1,28 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor files
+*.idea/
+*.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# PHP related (agar PHP code ham bo‘lsa)
+vendor/
+composer.lock
+
+# Node.js / Frontend build (agar front-end ishlatilsa)
+node_modules/
+dist/
+build/
+
+# PDF, DOCX yoki boshqa katta fayllarni version control qilish shart emas
+# Agar fayllar katta bo'lsa, LFS ishlatish mumkin
+# *.pdf
+# *.docx
