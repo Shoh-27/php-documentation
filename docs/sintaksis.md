@@ -1,8 +1,8 @@
 ## 2. Asosiy Sintaksis
-## PHP kodini yozishdan oldin, uning asosiy sintaksisini tushunish kerak. Bu bo'limda siz o'zgaruvchilar, ma'lumot turlari, operatorlar va asosiy funksiyalarni o'rganasiz.
+     PHP kodini yozishdan oldin, uning asosiy sintaksisini tushunish kerak. Bu bo'limda siz o'zgaruvchilar, ma'lumot turlari, operatorlar va asosiy funksiyalarni o'rganasiz.
 
 ## 2.1. PHP kodini yozish
-## PHP kodi har doim <?php bilan boshlanadi va HTML ichida yoki alohida PHP faylida yozilishi mumkin.
+     PHP kodi har doim <?php bilan boshlanadi va HTML ichida yoki alohida PHP faylida yozilishi mumkin.
 
 ## Misol 1: Oddiy PHP fayl
 ```
@@ -31,3 +31,26 @@
     PHP kodi <?php bilan boshlanadi
     Har bir buyruq ; (nuqta-vergul) bilan tugaydi
     Izohlar uchun // yoki /* */ ishlatiladi
+
+## 2.2. O'zgaruvchilar (Variables)
+    O'zgaruvchilar ma'lumotlarni saqlash uchun ishlatiladi. PHP da o'zgaruvchilar $ belgisi bilan boshlanadi.
+
+## Sintaksis:
+
+```
+    $o'zgaruvchiNomi = qiymat;
+```
+
+# Misol:
+```
+    <?php
+    $ism = "Aziz";
+    $yosh = 25;
+    $narx = 49.99;
+    $aktiv = true;
+    
+    echo "Ism: $ism\n";
+    echo "Yosh: $yosh\n";
+    echo "Narx: $narx\n";
+    echo "Aktiv: " . ($aktiv ? "Ha" : "Yo'q") . "\n";
+```
